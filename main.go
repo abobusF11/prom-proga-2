@@ -22,6 +22,5 @@ func Farewell(name string) string {
 }
 
 func main() {
-	fmt.Println(Greet("Git Flow"))
-	fmt.Println(Farewell("Git Flow"))
+	fmt.Println("Message from developer two")
 }
