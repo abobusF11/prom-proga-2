@@ -23,4 +23,5 @@ func Farewell(name string) string {
 
 func main() {
 	fmt.Println("Message from developer two")
+	fmt.Println("Message from developer one")
 }
