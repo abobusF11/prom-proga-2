@@ -2,21 +2,23 @@ package main
 
 import "fmt"
 
-func Greet(name string) string {
+func FormatMessage(prefix string, name string) string {
 	if name == "" {
-		return "Hello, guest!"
+		name = "guest"
 	}
-	return "Hello, " + name + "!"
+
+	return prefix + ", " + name + "!"
+}
+
+func Greet(name string) string {
+	return FormatMessage("Hello", name)
 }
 
 func Farewell(name string) string {
-	if name == "" {
-		return "Goodbye, guest!"
-	}
-
-	return "Goodbye, " + name + "!"
+	return FormatMessage("Goodbye", name)
 }
 
 func main() {
 	fmt.Println(Greet("Git Flow"))
+	fmt.Println(Farewell("Git Flow"))
 }
