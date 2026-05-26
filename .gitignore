@@ -1,0 +1,14 @@
+# Go build files
+*.exe
+*.test
+*.out
+
+# Dependency/cache folders
+vendor/
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+commit.log
