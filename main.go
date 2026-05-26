@@ -9,6 +9,14 @@ func Greet(name string) string {
 	return "Hello, " + name + "!"
 }
 
+func Farewell(name string) string {
+	if name == "" {
+		return "Goodbye, guest!"
+	}
+
+	return "Goodbye, " + name + "!"
+}
+
 func main() {
 	fmt.Println(Greet("Git Flow"))
 }
